@@ -7,10 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-slate-100: oklch(96.8% 0.007 247.896);
     --color-gray-700: oklch(37.3% 0.034 259.733);
-    --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-zinc-900: oklch(21% 0.006 285.885);
     --color-black: #000;
     --color-white: #fff;
@@ -182,12 +180,6 @@
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
-  .mr-4 {
-    margin-right: calc(var(--spacing) * 4);
-  }
-  .mr-5 {
-    margin-right: calc(var(--spacing) * 5);
-  }
   .mr-7 {
     margin-right: calc(var(--spacing) * 7);
   }
@@ -202,9 +194,6 @@
   }
   .table {
     display: table;
-  }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
   }
   .h-20 {
     height: calc(var(--spacing) * 20);
@@ -283,6 +272,18 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\/src\/assets\/bguber\.png\'\)\] {
+    background-image: url('/src/assets/bguber.png');
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-left {
+    background-position: left;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -318,9 +319,6 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
-  }
-  .text-blue-500 {
-    color: var(--color-blue-500);
   }
   .text-gray-700 {
     color: var(--color-gray-700);
@@ -364,13 +362,6 @@
       }
     }
   }
-  .hover\:bg-gray-800 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-gray-800);
-      }
-    }
-  }
   .hover\:bg-zinc-900 {
     &:hover {
       @media (hover: hover) {
@@ -381,6 +372,11 @@
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
+    }
+  }
+  .sm\:py-10 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 10);
     }
   }
   .md\:mx-2 {
