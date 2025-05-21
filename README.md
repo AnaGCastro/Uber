@@ -2,7 +2,7 @@
 
 Este projeto é uma **reprodução visual da interface da página inicial da Uber**, desenvolvida com **HTML5** e **Tailwind CSS**, visando praticar design responsivo e técnicas modernas de estilização com Tailwind.
 
-![Preview do Projeto](./ProejtoUber.png)
+![Preview do Projeto](./ProjetoUber.png)
 
 ---
 
